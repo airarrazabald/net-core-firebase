@@ -9,6 +9,11 @@ namespace FirebaseStorageApp.Controllers
     [ApiController]
     public class FileStorageController : ControllerBase
     {
+        /// <summary>
+        /// Upload Documents
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] FileModel file)
         {
